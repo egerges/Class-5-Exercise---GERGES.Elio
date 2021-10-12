@@ -34,7 +34,7 @@ Answer: **mkdir 'my-new-folder'**
 Answer: **rmdir 'my-nonexistent-folder' || echo 'Whoops, cannot delete a folder that does not exist'**
 
 5. > Write the command (or commands) that will navigate to your desktop, and then to the parent folder of the desktop.
-Answer: 
+Answer: **cd ../../../Desktop/..**
 
 
 ---
