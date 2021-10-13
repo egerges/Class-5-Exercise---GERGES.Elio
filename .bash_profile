@@ -16,6 +16,8 @@ echo "       \/        \/         \/       \/       \/         \/          \/   
 echo
 
 echo "${CYAN}Welcome back ${RED}${USER}${NC}."
-now="$(date +'%I:%M:%S')"
+now="$(date +'%T')"
 echo "${BLUE}This terminal session has been actived on ${now}.${NC}"
 echo "${BLUE}Use 'man' command for manual for any command.${NC}"
+
+alias whattimeisit="echo 'It is $(date +'%T').'"
