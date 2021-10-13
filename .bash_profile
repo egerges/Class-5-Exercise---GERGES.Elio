@@ -22,6 +22,7 @@ echo "${BLUE}Use 'man' command for manual for any command.${NC}"
 
 alias whattimeisit="echo 'It is $(date +'%T').'"
 alias showtime="echo 'It is $(date +'%T').'"
+alias myip="ifconfig | grep 'inet '"
 
 function getDate() {
     if [ -z $1 ]
