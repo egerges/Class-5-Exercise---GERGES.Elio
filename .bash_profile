@@ -21,3 +21,20 @@ echo "${BLUE}This terminal session has been actived on ${now}.${NC}"
 echo "${BLUE}Use 'man' command for manual for any command.${NC}"
 
 alias whattimeisit="echo 'It is $(date +'%T').'"
+
+function getDate() {
+    if [ -z $1 ]
+    then
+        echo "${CYAN}It is $(date +'%T').${NS}"
+    else
+        for ((i = 1; i <= $#; i++ )); do
+            if [[ "${argv[i]:0:1}" != "%" ]]
+            then
+                echo "${RED}${argv[i]} is not a valid input.${NC}"
+                break
+            else
+                echo "${CYAN}It is $(date +${argv[i]}).${NC}"
+            fi
+        done
+    fi
+}
