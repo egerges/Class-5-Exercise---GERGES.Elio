@@ -21,6 +21,7 @@ echo "${BLUE}This terminal session has been actived on ${now}.${NC}"
 echo "${BLUE}Use 'man' command for manual for any command.${NC}"
 
 alias whattimeisit="echo 'It is $(date +'%T').'"
+alias showtime="echo 'It is $(date +'%T').'"
 
 function getDate() {
     if [ -z $1 ]
